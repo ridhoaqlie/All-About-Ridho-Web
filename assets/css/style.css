@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: bold;
+    color: black;
+    font-size: 2.5em;
+    margin: auto;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    padding-top: 0.5em;
+    padding-bottom: 0;
+    background-color: white;
+    color: #0A0A0A;
+    font-size: 1.1em;
+    width: 100%;
+}
+
+#nav-clone {
+    position: fixed;
+    transition: all 300ms ease-in-out, border 1ms linear, padding-right 0ms;
+}
+
+.hide {
+    transform: translateY(-100%);
+}
+
+.fixed {
+    z-index: 100;
+    transform: translateY(0%);
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.logo,
+.logo a {
+    display: flex;
+    align-items: center;
+    color: #0B60B0;
+    cursor: pointer;
+}
+
+.logo span {
+    margin: 0 10px;
+}
+
+#logo,
+#logo-clone {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar-item {
+    display: flex;
+    align-items: center;
+    margin-right: 2em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 2em;
+}
+
+li {
+    list-style: none;
+}
+
+nav ul li {
+    margin: auto 1em;
+    font-weight: 600;
+}
+
+nav li a {
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav li a:hover {
+    color: #0B60B0;
+}
+
+.contact {
+    font-weight: bold;
+    color: white;
+    background-color: #0B60B0;
+    padding: 0.5em 1.5em;
+    border-radius: 0.3em;
+    transition: 0.2s;
+}
+
+.contact:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    background-color: inherit;
+    margin: 0;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropbtn {
+    color: #0B60B0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    transform: translateX(-2em);
+    background-color: #f9f9f9;
+    border-radius: 0.5em;
+    width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    text-align: left;
+    padding: 0.7em 0.7em;
+    font-size: 0.9em;
+}
+
+.dropdown-content a:hover {
+    background-color: #ffffff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.main,
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main {
+    align-items: flex-start;
+    padding-top: 6em;
+}
+
+#home {
+    width: 85%;
+    min-height: 90vh;
+    justify-content: space-around;
+    margin: auto;
+}
+
+#home div:first-of-type {
+    width: 50%;
+    padding: 2em 2em 3em 1em;
+    flex-basis: 500px;
+    flex-shrink: 1;
+}
+
+#home h1:first-of-type {
+    font-size: 1.7em;
+    color: #7a7a7aff;
+}
+
+#home p,
+#mycertificate p {
+    font-size: 1.3em;
+    color: #484848;
+}
+
+#hero {
+    background-color: #F1F4F9;
+    border-radius: 1em;
+    width: 90%;
+    transition: 2s;
+}
+
+#hero:hover {
+    transform: scale(1.1)
+}
+
+#home div:last-of-type {
+    width: 50%;
+    text-align: center;
+    flex-basis: 500px;
+    flex-shrink: 0.2;
+}
+
+
+#profile {
+    padding-top: 6em;
+    width: 85%;
+    margin: auto;
+    min-height: 100vh;
+}
+
+#profile h1,
+#mywork h1,
+#mycertificate h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+#profile h1::after,
+#mywork h1::after,
+#mycertificate h1::after {
+    display: block;
+    content: "";
+    border: 2px solid black;
+    width: 4em;
+    margin: auto;
+}
+
+.pasfotoborder {
+    margin: 0px auto;
+    display: block;
+    border: 15px solid #F0EDCF;
+    width: 13em;
+    height: 16em;
+}
+
+#pasfoto {
+    width: 14em;
+    transform: translate3d(15px, -25px, 10px);
+}
+
+#profile ul,
+#profile li {
+    padding: 0;
+    font-size: 1.1em;
+    text-align: center;
+    color: #484848;
+    font-weight: 500;
+}
+
+
+#profile .section {
+    margin: 40px auto;
+    padding: 30px 0;
+    max-width: 90%;
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.2), 1px -1px 5px 0px rgba(0, 0, 0, 0.19);
+}
+
+#profile .profileSectionChild {
+    width: 50%;
+}
+
+#profile p {
+    padding-right: 50px;
+    font-size: 1.2em;
+    text-align: justify;
+    color: #484848;
+}
+
+
+#mywork,
+#mycertificate {
+    padding-top: 6em;
+    width: 85%;
+    margin: auto;
+}
+
+#mywork .section,
+#mycertificate .section {
+    flex-wrap: wrap;
+}
+
+.myWorkSectionChild p {
+    text-align: center;
+    color: #6c757d;
+    margin: 0.5em auto;
+}
+
+#mywork #subjudul {
+    margin: 0.5em auto 1em;
+    text-align: center;
+    color: #6c757d;
+}
+
+
+.popUpImg {
+    transition: 0.5s;
+}
+
+.popUpImg:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+#mywork .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: translate(0, 0) scale(0);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.4s;
+    z-index: 200;
+}
+
+#mywork .popup.active {
+    top: -50%;
+    left: -50%;
+    transform: translate(50%, 50%) scale(1);
+    opacity: 1;
+}
+
+#mywork .popup span {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 50px;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+    z-index: 200;
+}
+
+#mywork .popup img {
+    position: absolute;
+    border-radius: 0.5em;
+    width: 100%;
+    transform: translateY(-10%) scale(0.7);
+}
+
+.myWorkSectionChild {
+    width: 30%;
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    font-size: 1.2em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5em;
+    margin: 1em 0 2em;
+}
+
+.myWorkSectionChild h2 {
+    font-size: 1.2em;
+    text-align: left;
+    color: #495057;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.myWorkSectionChild img,
+.myCertificateSectionChild img {
+    width: 100%;
+    border-radius: 0.5em 0.5em 0 0;
+}
+
+.myWorkSectionChild .detail {
+    width: 100%;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.myWorkSectionChild div:first-child {
+    margin: 0;
+    width: auto;
+    max-height: fit-content;
+    overflow: hidden
+}
+
+
+.myWorkSectionChild a {
+    font-size: 1.5em;
+    display: block;
+    width: 20%;
+    color: #0B60B0;
+    border: 2px solid #0B60B0;
+    border-radius: 0.3em;
+    margin: auto;
+    transition: 0.3s;
+}
+
+
+.myWorkSectionChild a:hover {
+    background-color: #0B60B0;
+    color: white;
+}
+
+.myWorkSectionChild span {
+    color: #0B60B0;
+    font-weight: 500;
+}
+
+#mycertificate .section {
+    margin-top: 2em;
+}
+
+.myCertificateSectionChild {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 0.5em;
+    margin: 1em 0 2em;
+}
+
+.myCertificateSectionChild p {
+    margin-top: 0;
+}
+
+.myCertificateSectionChild h2 {
+    margin-bottom: 0.5em;
+}
+
+
+#mycontact {
+    width: 100%;
+    min-height: 70vh;
+    background-color: #21262C;
+    color: #CACACA;
+    font-weight: 500;
+    font-size: 1.2em;
+    padding-bottom: 2em;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#mycontact div {
+    margin-top: 2em;
+    padding-top: 2em;
+}
+
+#mycontact h1 {
+    color: #3F78E0;
+}
+
+#mycontact div:last-of-type h1 {
+    font-size: 1.7em;
+    color: #3F78E0;
+}
+
+#mycontact ul {
+    padding-left: 0;
+}
+
+#mycontact li {
+    margin: 0.5em 1em 0 0;
+}
+
+#mycontact p {
+    font-size: 1.3em;
+    font-weight: 300;
+}
+
+#mycontact ul:nth-of-type(2) {
+    display: flex;
+}
+
+.sosialmedia a {
+    color: #CACACA;
+}
+
+.sosialmedia a:hover {
+    color: #0B60B0;
+}
+
+@media only screen and (max-width:950px) {
+    .nav {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width:865px) {
+    .nav {
+        justify-content: space-around;
+        margin: 0 2em;
+    }
+
+    .menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu .line {
+        width: 30px;
+        height: 4px;
+        border-radius: 0.5em;
+        background-color: #0B60B0;
+        margin: 0.3em 0;
+    }
+
+    .navbar-item {
+        display: none;
+    }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+
+    <!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+    <!-- Import CDN Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="assets/css/style-detail.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/img/logo.png" id="logo-detail">
+                <span>All About Ridho</span>
+            </a>
+        </div>
+    </nav>
+    <section class="judul">
+        <h1>Portofolio Detail</h1>
+        <a href="index.html">Home</a><span> / Portfolio Detail</span>
+    </section>
+
+    <section class="detail-img">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="swiper-img" src="assets/img/work-2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="swiper-img" src="assets/img/work-2-1.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="swiper-img" src="assets/img/work-2-2.png" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="info">
+            <div class="project-info">
+                <h2>Project Information</h2>
+                <ul>
+                    <li><b>Category:</b><span id="category"> Mobile Application</span></li>
+                    <li><b>Project Date:</b><span id="date"> July 2022</span></li>
+                    <li><b>Project URL:</b><a id="url" href="https://github.com/ridhoaqlie/PenjadwalanMatkul.git"> Link
+                            Project</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="project-desc">
+                <h2>Description</h2>
+                <p id="p-description">
+                    This project is one of my freelance projects. Conceptualizing a student course
+                    scheduling application using Kotlin language and integrated with RestAPI.'
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div>
+            <h1>Contact</h1>
+            <p>If you have any question or offer to me. feel free to contact me.</p>
+            <ul>
+                <li><i class="bi bi-geo-alt"></i>&nbsp&nbsp Kab. Pasaman, Sumatera Barat, 25353</li>
+                <li><i class="bi bi-envelope"></i>&nbsp&nbsp ridhoaqlie@gmail.com</li>
+                <li><i class="bi bi-phone"></i>&nbsp&nbsp (+62)852-3092-8554</li>
+            </ul>
+        </div>
+        <div>
+            <h1>Sosial Media</h1>
+            <ul>
+                <li class="sosialmedia">
+                    <a href="https://facebook.com/rido.aqli">
+                        <i class="bi bi-facebook"></i>
+                        &nbspFacebook
+                    </a>
+                </li>
+                <li class="sosialmedia">
+                    <a href="https://instagram.com/ridhoaqlie">
+                        <i class="bi bi-instagram"></i>
+                        &nbspInstagram
+                    </a>
+                </li>
+                <li class="sosialmedia">
+                    <a href="https://linkedin.com/in/ridho-aqli-efendi-51a66322a/">
+                        <i class="bi bi-linkedin"></i>
+                        &nbspLinkedIn
+                    </a>
+                </li>
+                <li class="sosialmedia">
+                    <a href="https://github.com/ridhoaqlie">
+                        <i class="bi bi-github"></i>
+                        &nbspGithub
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            }
+        });
+    </script>
+</body>
+
+</html>
